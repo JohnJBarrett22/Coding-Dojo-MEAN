@@ -1,0 +1,38 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 90rem;
+    height: 56rem;
+    margin: 1rem auto;
+    text-align: center;
+    border: 1px solid black;   
+}
+#title {
+    text-align: center;
+}
+.columns {
+    display: inline-block;
+    vertical-align: top;
+    width: 13rem;
+    height: 50rem;
+    text-align: center;
+}
+.boxes {
+    width: 12rem;
+    height: 11rem;
+    padding: 2px;
+    margin: 3px auto;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.right {
+    float: right;
+}
+.cushion {
+    margin: 5.2rem 5rem;
+}
+.center {
+    text-align: center;
+}
