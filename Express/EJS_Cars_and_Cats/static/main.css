@@ -1,0 +1,16 @@
+#container {
+    width: 65rem;
+    height: 50rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: .25rem solid black;
+}
+h1 {
+    text-align: center;
+}
+img {
+    width: 275px;
+    height: 150px;
+    margin: .5rem 1.5rem;
+    border-radius: 7rem;
+}
