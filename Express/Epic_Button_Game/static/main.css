@@ -1,0 +1,29 @@
+* {
+    text-align: center;
+}
+#title {
+    font-size: 5rem;
+}
+#container {
+    width: 45rem;
+    height: 30rem;
+    margin: 2rem auto;
+}
+#epic {
+    width: 20rem;
+    height: 20rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    border-radius: 10rem;
+    margin-top: 5rem;
+    color: white;
+    background-color: blue;
+}
+#reset {
+    float: right;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 20rem;
+    color: white;
+    background-color: red;
+}
