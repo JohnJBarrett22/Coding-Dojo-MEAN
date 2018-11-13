@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Real-Time Colors</title>
+</head>
+<body>
+    <button id="green">Green</button><button id="blue">Blue</button><button id="pink">Pink</button>
+</body>
+<script type="text/javascript">
+    var socket = io();
+    $("#green").click(function(){
+        socket.emit("green_push");
+    })
+    $("#blue").click(function(){
+        socket.emit("blue_push");
+    })
+    $("#pink").click(function(){
+        socket.emit("pink_push");
+    })
+    socket.on("launch", function(data){
+        $("body").css("background-color", `${data.bgc}`);
+        console.log(data);
+        console.log(data.bgc);
+    })
+    socket.on("green_bg", function(){
+        $("body").css("background-color", "green");
+    })
+    socket.on("blue_bg", function(){
+        $("body").css("background-color", "blue");
+    })
+    socket.on("pink_bg", function(){
+        $("body").css("background-color", "pink");
+    })
+</script>
+</html>
