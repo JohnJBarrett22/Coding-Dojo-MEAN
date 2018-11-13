@@ -1,0 +1,27 @@
+#container {
+    width: 43rem;
+    height: 50rem;
+    margin: 0.5rem auto;
+}
+#chatbox {
+    width: 40rem;
+    height: 35rem;
+    margin: 0.25rem auto;
+    overflow: auto;
+    border: 0.25rem solid black;
+}
+#title {
+    margin-left: 1.40rem;
+}
+#msg {
+    width: 40rem;
+    height: 2rem;
+    margin: 0.50rem 1.40rem;
+}
+#btn {
+    display: block;
+    float: right;
+    padding: 0.50rem;
+    margin-right: 1.40rem;
+    font-weight: bold;
+}

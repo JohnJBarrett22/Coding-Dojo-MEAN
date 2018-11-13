@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">'    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Group Chat</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title"><u>Conversation Board</u></h1>
+        <div id="chatbox"></div>
+        <input id="msg" type="text">
+        <button id="btn">Send</button>
+    </div>
+</body>
+<script type="text/javascript">
+    var socket = io();
+    var name = prompt("Please enter your name:","Name");
+    var elem = document.getElementById('chatbox');
+
+    socket.emit("new_user", {name:name});
+    $("#btn").click(function(){
+        socket.emit("new_message", {name:name, message:$('#msg').val()});
+            $('#msg').val("");
+    });
+    socket.on('existing_messages', function(data){
+        for(i in data)
+            $("#chatbox").append("<p>"+data[i].name+": "+data[i].message+"</p>");
+        elem.scrollTop = elem.scrollHeight;
+    });
+    socket.on('update_messages', function(data){
+        $("#chatbox").append("<p>"+data.name+": "+data.message+"</p>");
+        elem.scrollTop = elem.scrollHeight;
+    });
+    socket.on('user_disconnect', function(data){
+        $("#chatbox").append("<p style='color:red'>"+data.name+" has left the chat"+"</p>");
+        elem.scrollTop = elem.scrollHeight;
+    });
+    socket.on('display_new_user', function(data){
+        $("#chatbox").append("<p style='color:green'>"+data.name+" has joined the chat"+"</p>");  	
+        elem.scrollTop = elem.scrollHeight;
+    });
+</script>
+</html>
