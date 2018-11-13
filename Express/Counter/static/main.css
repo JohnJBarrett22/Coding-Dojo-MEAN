@@ -1,0 +1,8 @@
+#counter {
+    width: 45rem;
+    height: 25rem;
+    margin: 2rem auto;
+    text-align: center;
+    padding-top: 15rem;
+    border: .25rem solid black;
+}
