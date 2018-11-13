@@ -1,0 +1,29 @@
+#container {
+    width: 40rem;
+    height: 30rem;
+    margin: 5rem auto;
+    padding: 5rem;
+    border: 0.25rem solid black;
+}
+#rect {
+    width: 40rem;
+    height: 8rem;
+}
+#btn {
+    float: right;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+}
+.fields {
+    float: right;
+    width: 20rem;
+    height: 2rem;
+}
+.drop {
+    float: right;
+    width: 20.25rem;
+    height: 2.5rem;
+}

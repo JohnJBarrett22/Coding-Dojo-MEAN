@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="container">
+        <form action="/result" method="post">
+            <h2>Your Name:<input class="fields" type="text" name="name"></h2>
+            <h2>Dojo Location:
+                <select class="drop" name="location">
+                    <option value="Berkley">Berkley</option>
+                    <option value="Boise">Boise</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Silicon Valley">Silicon Valley</option>
+                    <option value="Tulsa">Tulsa</option>
+                    <option value="Tysons Corner">Tysons Corner</option>
+                </select>
+            </h2>
+            <h2>Favorite Language:
+                <select class="drop" name="language">
+                    <option value="Java">Java</option>
+                    <option value="MEAN">MEAN</option>
+                    <option value=".Net/C#">.Net/C#</option>
+                    <option value="Python">Python</option>
+                    <option value="Ruby on Rails">Ruby on Rails</option>
+                    <option value="Swift">Swift</option>
+                </select>
+            </h2>
+            <h2>Comment (optional):</h2>
+            <h2><input id="rect" type="textarea" name="comment"></h2>
+            <h2><input id="btn" type="submit" value="Submit"></h2>
+        </form>
+    </div>
+</body>
+</html>
