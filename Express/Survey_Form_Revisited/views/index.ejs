@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="header">
+       <p class="frm"></p> 
+       <p class="rnd"></p> 
+    </div>
+    <div id="container">
+        <h2>Your Name:<input class="fields" type="text" id="name"></h2>
+        <h2>Dojo Location:
+            <select class="drop" id="location">
+                <option value="Berkley">Berkley</option>
+                <option value="Boise">Boise</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Silicon Valley">Silicon Valley</option>
+                <option value="Tulsa">Tulsa</option>
+                <option value="Tysons Corner">Tysons Corner</option>
+            </select>
+        </h2>
+        <h2>Favorite Language:
+            <select class="drop" id="language">
+                <option value="Java">Java</option>
+                <option value="MEAN">MEAN</option>
+                <option value=".Net/C#">.Net/C#</option>
+                <option value="Python">Python</option>
+                <option value="Ruby on Rails">Ruby on Rails</option>
+                <option value="Swift">Swift</option>
+            </select>
+        </h2>
+        <h2>Comment (optional):</h2>
+        <h2><input class="rect" type="textarea" rows="3" id="comment"></h2>
+        <h2><input id="btn" type="submit" value="Submit"></h2>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var socket = io();
+            $("#btn").click(function(){
+                console.log("clicked button");
+                socket.emit("posting_form", {
+                    name:$("#name").val(),
+                    location:$("#location").val(),
+                    language:$("#language").val(),
+                    comment:$("#comment").val()
+                });
+            });
+            socket.on("updated_message", function(data){
+                $(".frm").text(data.info)
+            });
+            socket.on("random_number", function(data){
+                $(".rnd").text(data.message);
+            })
+        });
+    </script>
+</body>
+</html>
