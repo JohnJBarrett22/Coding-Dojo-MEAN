@@ -1,0 +1,35 @@
+<div id="container">
+  <div id="header">
+    <h2 id="counter">Your Gold: {{gold}} </h2>
+    <a id="link" href="/reset"><h1 id="ninjagold">Ninja Gold</h1></a>
+  </div>
+  <div id="forms">
+    <div class="box">
+      <h2 id="location">Farm</h2>
+      <img src="/assets/images/farm.jpg" alt="Picture of a farm">
+      <h3 id="desc">(earns 2-5 gold)</h3>
+      <button class="btn" (click)='farm()'>Find Gold!</button>
+    </div>  
+    <div class="box">
+      <h2 id="location">Cave</h2>
+      <img src="/assets/images/cave.jpg" alt="Picture of a cave">
+      <h3 id="desc">(earns 5-10 gold)</h3>
+      <button class="btn" (click)='cave()'>Find Gold!</button>
+    </div>
+    <div class="box">
+      <h2 id="location">House</h2>
+      <img src="/assets/images/house.jpeg" alt="Picture of a house">
+      <h3 id="desc">(earns 7-15 gold)</h3>
+      <button class="btn" (click)='house()'>Find Gold!</button>
+    </div>
+    <div class="box">
+      <h2 id="location">Casino</h2>
+      <img src="/assets/images/casino.png" alt="Picture of a casino">
+      <h3 id="desc">(earns/takes 0-100 gold)</h3>
+      <button class="btn" (click)='casino()'>Find Gold!</button>
+    </div>
+  </div>
+  <div id="output">
+      <p *ngFor="let log of adventureLog.reverse()">{{log}}</p>
+  </div>
+</div>
