@@ -1,0 +1,34 @@
+<div id="newform">
+  <h1>New Task</h1>
+  <form (submit)="onSubmit()">
+  <!-- <p> {{ newTask | json }} </p> -->
+  <p>Title: <input id="top" class="fields" type="text" name="newTask.title" [(ngModel)]="newTask.title"/></p>
+  <p>Description: <input class="fields" type="text" name="newTask.description" [(ngModel)]="newTask.description"/><input  id="create" type="submit" value="Create Task"/></p>
+  </form>
+</div>
+<div id="leftpanel">
+  <h1>Task List</h1>
+  <div *ngFor="let task of tasks; let idx = index">
+    <div id="task">
+      <p>{{task.title}}<button id="edit" class="btn" (click)="editForm(task)">EDIT</button></p>
+      <p>{{task.description}}<button id="delete" class="btn" (click)="onDelete(task)">DELETE</button></p>
+    </div>  
+  </div>
+</div>
+<div id="rightpanel">
+  <div *ngIf="editTog">
+    <h1>Edit a Task</h1>
+    <form (submit)="onEdit()">
+      <p><input class="fields" type="text" name="editTask.title" [(ngModel)]="editTask.title"></p>
+      <p><input class="fields" type="text" name="editTask.description" [(ngModel)]="editTask.description"></p>
+      <input  id="edit2" class="btn" type="submit" value="Edit" />
+    </form>
+  </div>
+</div>
+
+<!-- <h1>{{title}}</h1>
+  <div id="btndiv">
+    <button id="gatbtn" (click)="getTasksFromService()" >Get All Tasks</button>
+    <p></p>
+
+    <div id="info" *ngIf="green"> -->

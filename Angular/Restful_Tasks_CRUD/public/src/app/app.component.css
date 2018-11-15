@@ -1,0 +1,76 @@
+* {
+    font-weight: bold;
+}
+#container {
+    padding: 1rem;
+    text-align: center;
+    border: .3rem solid #F7A402;
+    border-radius: .5rem;
+}
+#btndiv {
+    padding: 1rem;
+    border: .3rem solid blue;
+    border-radius: .5rem;
+}
+#gatbtn {
+    padding: .5rem;
+    color: white;
+    background-color: #9C28B0;
+    border-radius: .5rem;
+}
+#showbtn {
+    width: 4rem;
+    height: 4rem;
+    margin: .5rem;
+    color: white;
+    background-color: #2C9687;
+    border-radius: 15rem;
+}
+#info {
+    padding: 1rem;
+    border: .3rem solid green;
+    border-radius: .5rem;
+}
+#task {
+    width: 25rem;
+    margin: 0.35rem;
+    border: 1px solid black;
+    background-color: #F5F5F5;
+}
+#create {
+    color: white;
+    background-color: #899CAE;
+}
+#edit {
+    color: white;
+    background-color: #899CAE;
+}
+#edit2 {
+    color: white;
+    background-color: #899CAE;
+    margin-right: 24.75rem;
+}
+#delete {
+    color: white;
+    background-color: #DFBEBE;
+}
+#leftpanel {
+    display: inline-block;
+    vertical-align: top;
+    width: 45rem;
+}
+#rightpanel {
+    display: inline-block;
+    width: 45rem;
+}
+#top {
+    margin-left: 2.85rem;
+}
+.fields {
+    width: 20rem;
+}
+.btn {
+    float: right;
+    width: 5rem;
+    margin: .35rem;
+}
