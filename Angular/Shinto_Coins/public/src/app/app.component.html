@@ -1,0 +1,25 @@
+<div id="container">
+  <div id="header">
+    <ul>
+      <li>
+          <img src="/assets/images/shinto.png" alt="Shinto Coin">
+      </li>
+      <li>
+        <button [routerLink]="['home']">Home</button>
+      </li>
+      <li>
+        <button [routerLink]="['mine']">Mine Coins</button>
+      </li>
+      <li>
+        <button [routerLink]="['buy']">Buy Coins</button>
+      </li>
+      <li>
+        <button [routerLink]="['sell']">Sell Coins</button>
+      </li>
+      <li>
+        <button [routerLink]="['ledger']">Browse Ledger</button>
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+</div>

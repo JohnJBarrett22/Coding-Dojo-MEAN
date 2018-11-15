@@ -1,0 +1,21 @@
+* {
+    text-align: left;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+th {
+    text-align: center;
+}
+#ledger {
+    border: 1px solid #F7922A;
+}
+#component {
+    padding: 1rem 3rem;
+}
+#grey {
+    background-color: lightgrey;;
+}

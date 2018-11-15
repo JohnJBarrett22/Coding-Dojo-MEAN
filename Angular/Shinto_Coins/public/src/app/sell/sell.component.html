@@ -1,0 +1,9 @@
+<div id="component">
+    <h1>Sell ShintoCoins</h1>
+    <h2>Current ShintoCoin Value: ${{_httpService.coinValue}}.00</h2>
+    <h2>Number of ShintoCoins Owned: {{_httpService.yourCoins}}</h2>
+    <form (submit)="_httpService.sellCoin(qty)">
+        <input type="number" placeholder="Quantity" name="sell" [(ngModel)]="qty">
+        <button type="submit">Sell</button>
+    </form>
+</div>
