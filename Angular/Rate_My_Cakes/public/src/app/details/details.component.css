@@ -1,0 +1,16 @@
+#imgbox2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 35rem;
+    height: 20rem;
+}
+#details {
+    display: inline-block;
+    width: 31rem;
+    height: 14rem;
+    padding: 3rem;
+}
+.pic2 {
+    width: 35rem;
+    height: 20rem;
+}

@@ -1,0 +1,12 @@
+<h1>Baked by {{cakesToShow.baker}}</h1>
+<div id="imgbox2">
+  <img class="pic2" [src]="cakesToShow.image">
+</div>
+<div id="details">
+  <h3>Average rating: {{avgRating}}</h3>
+  <div *ngFor="let review of cakesToShow.ratings; let idx = index">
+    <h3>{{review.rating}}</h3>
+    <h3>{{review.comment}}</h3>
+  </div>
+
+</div>

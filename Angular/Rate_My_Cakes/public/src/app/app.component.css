@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+select {
+    display: block;
+}
+textarea {
+    display: block;
+}
+hr {
+    margin: 1rem auto;
+}
+h3 {
+    margin: 1rem;
+}
+#container {
+    width: 80rem;
+    height: 57rem;
+    margin: 0 auto;
+}
+#top {
+    width: 75rem;
+    height: 25rem;
+    margin: 1rem auto;
+}
+#leftpanel {
+    display: inline-block;
+    vertical-align: top;
+    width: 19rem;
+    height: 17rem;
+    margin: 1rem 1.25rem;
+    padding: 3rem;
+    border: 1px solid black;
+}
+#rightpanel {
+    display: inline-block;
+    width: 45rem;
+    height: 23rem;
+    margin: 1rem 1rem;
+    overflow-y: scroll;
+}
+#bottom{
+    width: 75rem;
+    height: 20rem;
+    margin: 1rem auto;
+}
+#cake{
+    width: 40rem;
+    height: 7rem;
+    margin-bottom: .25rem;
+}
+#imgbox {
+    display: inline-block;
+    vertical-align: top;
+    width: 12rem;
+    height: 7rem;
+}
+#formbox {
+    display: inline-block;
+    width: 27rem;
+    height: 7rem;
+}
+#imgbox2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 35rem;
+    height: 20rem;
+}
+#details {
+    display: inline-block;
+    width: 31rem;
+    height: 14rem;
+    padding: 3rem;
+}
+#rating {
+    margin-left: 1rem;
+}
+.fields {
+    width: 17rem;
+    height: 2rem;
+}
+.fields2 {
+    width: 12rem;
+    height: 2rem;
+}
+.pic {
+    width: 12rem;
+    height: 7rem;
+}
+.btn1 {
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    color: white;
+    background-color: #66BBFF;
+}
+.btn2 {
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    color: white;
+    background-color: #7A8993;
+}
