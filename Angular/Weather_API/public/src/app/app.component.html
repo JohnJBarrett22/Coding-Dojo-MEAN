@@ -1,0 +1,33 @@
+<div id="container">
+  <div id="header">
+    <h1>Weather Forecast Application</h1>
+  </div>
+  <div id="navigation">
+    <ul>
+      <li>
+        <a [routerLink]="['seattle']">Seattle, WA</a>
+      </li>
+      <li>|</li>
+      <li>
+        <a [routerLink]="['sanjose']">San Jose, CA</a>
+      </li>
+      <li>|</li>
+      <li>
+        <a [routerLink]="['burbank']">Burbank, CA</a>
+      </li>
+      <li>|</li>
+      <li>
+        <a [routerLink]="['dallas']">Dallas, TX</a>
+      </li>
+      <li>|</li>
+      <li>
+        <a [routerLink]="['dc']">Washington D. C.</a>
+      </li>
+      <li>|</li>
+      <li>
+        <a [routerLink]="['chicago']">Chicago, IL</a>
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+</div>

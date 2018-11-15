@@ -1,0 +1,19 @@
+#component {
+    width: 75rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+#details {
+    display: inline-block;
+    vertical-align: top;
+    width: 25rem;
+    min-height: 15rem;
+    text-align: left;
+}
+
+img {
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+    width: 45rem;
+}

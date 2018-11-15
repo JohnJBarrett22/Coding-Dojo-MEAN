@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: blue;
+}
+li {
+    display: inline;
+    margin: 1rem;
+    list-style-type: none
+}
+#container {
+    width: 85rem;
+    height: 50rem;
+    margin: 1rem auto;
+}
+#header {
+    width: 82rem;
+    height: 4rem;
+    margin: 1rem auto;
+    padding: .5rem;
+    font-size: 1.66rem;
+    text-align: center;
+}
+#navigation {
+    width: 82rem;
+    height: 4rem;
+    margin: 1rem auto;
+    padding: .5rem;
+    font-size: 1.66rem;
+    text-align: center;
+}
