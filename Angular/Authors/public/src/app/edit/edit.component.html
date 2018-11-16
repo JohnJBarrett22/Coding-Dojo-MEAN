@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Authors</title>
+</head>
+<body>
+  <div id="component">
+    <a [routerLink]="['/home']"><h2>Home</h2></a>
+    <h2>Edit this author:</h2>
+    <form (submit)="editSubmit()">
+      <h3>Name:</h3>
+      <input type="text" name="editName.name" [(ngModel)]="editName.name" [value]="author.author.name">
+      <br>
+      <button class="btn btn-primary" [routerLink]="['/home']">Cancel</button>
+      <input class="btn btn-success" type="submit" value="Edit">
+    </form>
+    <div id="errors">	
+      <h3>{{error}}</h3>	
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Authors</title>
+</head>
+<body>
+  <div id="component">
+    <a [routerLink]="['/new']"><h2>Add an author</h2></a>
+    <h2>We have quotes by:</h2>
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Author</th>
+          <th scope="col">Actions Available</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let author of authors; let idx = index">
+          <td>{{author.name}}</td>
+          <td><button class="btn btn-warning" [routerLink]="['/edit', author._id]">Edit</button><button class="btn btn-danger" (click)="deleteAuthor(author._id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table> 
+  </div>
+</body>
+</html>
