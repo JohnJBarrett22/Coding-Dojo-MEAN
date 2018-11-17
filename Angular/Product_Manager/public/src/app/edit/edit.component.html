@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box">
+    <h1>Edit Product</h1>
+    <div id="lilbox">
+      <form (submit)="editSubmit()">
+        <h3>Title: <input class="fields" type="text" name="title" [(ngModel)]="editProduct.title"></h3>
+        <p class="fronterror" *ngIf="editProduct.title.length < 4">Title must be at least 4 characters long!</p>
+        <h3>Price: <input class="fields" type="number" name="price" [(ngModel)]="editProduct.price"></h3>
+        <p class="fronterror" *ngIf="!editProduct.price">Price is required!</p>      
+        <h3>Image URL: <input class="fields" type="text" name="image" [(ngModel)]="editProduct.image"></h3>
+        <input class="button btn btn-primary" type="submit" value="Update">
+        <button class="button btn btn-danger" (click)="deleteProduct(editProduct._id)">Delete</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

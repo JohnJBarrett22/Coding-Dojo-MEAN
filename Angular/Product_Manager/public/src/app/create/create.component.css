@@ -1,0 +1,34 @@
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#box {
+    height: 30rem;
+    margin: 1rem;
+    padding: 2rem;
+    border: .25rem solid black;
+    border-radius: 3rem;
+}
+#lilbox {
+    width: 40rem;
+}
+.fronterror {
+    text-align: right;
+    color: orange;
+}
+.backerror {
+    color: red;
+}
+.button {
+    margin: 1rem 1rem;
+}
+.fields {
+    float: right;
+    text-align: right;
+}

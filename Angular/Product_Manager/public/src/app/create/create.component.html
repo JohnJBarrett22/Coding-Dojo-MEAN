@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>PPM</title>
+</head>
+<body>
+  <div id="box">
+    <h1>Create a New Product</h1>
+    <div id="lilbox">
+      <form (submit)="addProduct()">
+        <h3>Title: <input class="fields" type="text" name="title" [(ngModel)]="newProduct.title"></h3>
+        <p class="fronterror" *ngIf="newProduct.title.length < 4">~Title must be at least 4 characters long~</p>
+        <h3>Price: <input class="fields" type="number" name="price" [(ngModel)]="newProduct.price"></h3>
+        <p class="fronterror" *ngIf="!newProduct.price">~Price is required~</p>      
+        <h3>Image URL: <input class="fields" type="text" name="image" [(ngModel)]="newProduct.image"></h3>
+        <input class="button btn btn-success" type="submit" value="Create">
+        <button class="button btn btn-danger" [routerLink]="['/']">Cancel</button>
+      </form>
+    </div>
+    <div *ngIf="error">
+      <h2 class="backerror">{{error}}</h2>
+    </div>
+  </div>
+</body>
+</html>

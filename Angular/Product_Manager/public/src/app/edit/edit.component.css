@@ -1,0 +1,21 @@
+#box {
+    height: 30rem;
+    margin: 1rem;
+    padding: 2rem;
+    border: .25rem solid black;
+    border-radius: 3rem;
+}
+#lilbox {
+    width: 40rem;
+}
+.button {
+    margin: 1rem 1rem;
+}
+.fronterror {
+    text-align: right;
+    color: orange;
+}
+.fields {
+    float: right;
+    text-align: right;
+}

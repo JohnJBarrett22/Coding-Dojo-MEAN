@@ -1,0 +1,31 @@
+fieldset {
+    color: black;
+}
+img {
+    max-height: 12rem;
+    max-width: 18rem;
+}
+#box {
+    min-height: 30rem;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    border: .25rem solid black;
+    border-radius: 3rem;
+}
+.error {
+    color: red;
+}
+.button {
+    margin: 1rem 1rem;
+}
+.frame {
+    display: inline-block;
+    vertical-align: top;
+    width: 20rem;
+    min-height: 22rem;
+    margin: .25rem;
+    padding: .25rem;
+    text-align: center;
+    border: 2px solid black;
+}
