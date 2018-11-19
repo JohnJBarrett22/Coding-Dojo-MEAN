@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <title>Login and Registration</title>
+</head>
+<body>
+    <div id="container">
+        <div id="leftpanel">
+            <h1><u>Registration</u></h1>
+            <form action="/register" method="post">
+                <h4>First Name: <input class="fields" type="text" name="firstName"></h4>
+                <h4>Last Name: <input class="fields" type="text" name="lastName"></h4>
+                <h4>Email: <input class="fields" type="text" name="email"></h4>
+                <h4>Birthday: <input id="bday" class="fields" type="date" name="birthday"></h4>
+                <h4>Password: <input id="pad" class="fields" type="text" name="password"></h4>
+                <h4>Confirm Password: <input class="fields" type="text" name="confirm_password"></h4>
+                <input class="fields btn btn-primary" type="submit" value="Register">
+            </form>
+            <% if(messages.regform) { %>
+                <% for (var x of messages.regform) { %>
+                    <div>
+                        <p class="alert alert-danger size" role="alert"><%= x %></p>
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+        <div id="rightpanel">
+            <h1><u>Login</u></h1>
+            <form action="post" method="post">
+                <h4>Email: <input class="fields" type="text" name="email"></h4>
+                <h4>Password: <input class="fields" type="text" name="password"></h4>
+                <input class="fields btn btn-success" type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

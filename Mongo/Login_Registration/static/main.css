@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    margin: 1rem;
+}
+#container {
+    width: 85rem;
+    height: 45rem;
+    margin: 3rem auto;
+}
+#leftpanel {
+    display: inline-block;
+    width: 40rem;
+    height: 50rem;
+    margin: 2rem 1rem;
+    padding: 0.25rem;
+    border: 0.25rem solid black;
+}
+#rightpanel {
+    display: inline-block;
+    vertical-align: top;
+    width: 40rem;
+    height: 20rem;
+    margin: 2rem 1rem;
+    padding: 0.30rem;
+    border: 0.25rem solid black;
+}
+#bday {
+    width: 17.15rem;
+}
+#pad {
+    margin-top: 0.25rem;
+}
+.fields {
+    float: right;
+}
+.size {
+    width: 20rem;
+    margin: 1rem auto;
+    font-weight: bold;
+    text-align: center;
+}
