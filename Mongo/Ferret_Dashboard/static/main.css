@@ -1,0 +1,9 @@
+#container {
+    width: 75rem;
+    height: 35rem;
+    margin: 3rem auto;
+}
+#error {
+    font-weight: bold;
+    color: red;
+}
