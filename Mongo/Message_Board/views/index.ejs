@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <title>Message Board</title>
+</head>
+<body>
+    <div id="nav">
+        <h1>The Dojo Message Board</h1>
+    </div>
+    <div id="wall">
+        <% if(messages.messageform) { %>
+            <% for (var x of messages.messageform) { %>
+                <div id="errorbox">
+                    <p class="alert alert-danger" role="alert"><%= x %></p>
+                </div>
+            <% } %>
+        <% } %>
+        <% if(messages.commentform) { %>
+            <% for (var x of messages.commentform) { %>
+                <div id="errorbox">
+                    <p class="alert alert-danger" role="alert"><%= x %></p>
+                </div>
+            <% } %>
+        <% } %>
+        <form action="/message" method="post">
+            <h2>Name:</h2>
+            <input type="text" name="name">
+            <h2>Message:</h2>
+            <textarea id="msgbigbox" name="message"></textarea>
+            <input class="btn btn btn-success" type="submit" value="Post Message">
+        </form>
+        <div id="messagebox">
+            <% posts.forEach(function(message){ %>
+                <h2>Name: <span class="msg"><%=message.name %></span></h2>
+                <h2>Message: <span class="msg"><%=message.message %></span></h2>
+                <div id="commentbox">
+                    <% for(var c = 0; c < message.comments.length; c++) { %>
+                        <h4>Name: <span class="cmt"><%=message.comments[c].name %></span></h4>
+                        <h4>Comment: <span class="cmt"><%=message.comments[c].comment %></span></h4>
+                        <br>
+                    <% } %>
+                    <form action="/comment" method="post">
+                        <h3>Name:</h3>
+                        <input type="text" name="name">
+                        <h3>Message:</h3>
+                        <textarea id="cmtbigbox" name="comment"></textarea>
+                        <input type="hidden" name="msgId" value="<%=message._id %>">
+                        <input class="btn btn btn-primary" type="submit" name="submit" value="Post Comment">
+                    </form>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

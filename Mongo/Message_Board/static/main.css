@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: blue;
+}
+#nav {
+    height: 3rem;
+    vertical-align: bottom;
+    background-color: lightgrey;
+    border-bottom: 0.25rem solid green;
+}
+#wall {
+    width: 85rem;
+    margin: 2rem auto;
+}
+#messagebox {
+    width: 75rem;
+    margin: 1rem auto;
+}
+#commentbox {
+    width: 65rem;
+    margin: 1rem auto;
+}
+#msgbigbox {
+    width: 85rem;
+    height: 7rem; 
+}
+#cmtbigbox {
+    width: 65rem;
+    height: 4rem; 
+}
+#error {
+    font-weight: bold;
+    color: red;
+}
+.msg {
+    color: blue;
+}
+.cmt {
+    font-style: italic;
+    color: green;
+}
+.btn {
+    float: right;
+    display: block;
+    padding: 0.55rem;
+    font-weight: bold;
+}
