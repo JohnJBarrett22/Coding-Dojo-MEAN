@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+input {
+    float: right;
+}
+#container {
+    display: inline-block;
+    vertical-align: top;
+    width: 25rem;
+    height: 20rem;
+    margin: 5rem auto;
+    padding: 5rem;
+    border: 0.25rem solid black;
+}
+#users {
+    display: inline-block;
+    width: 35rem;
+    height: 30rem;
+    margin: 5rem auto;
+    border: 0.25rem solid blue;
+}

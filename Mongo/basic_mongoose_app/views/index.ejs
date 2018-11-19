@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Join Us!</h1>
+        <form action="/users" method="post">
+            <h3>Name: <input type="text" name="name"></h3>
+            <h3>Age: <input type="text" name="age"></h3>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="users">
+        <% for (var i in info) { %>
+            <p>Name: <%= info[i].name %></p>
+            <p>Age: <%= info[i].age %></p>
+            <hr>
+        <% } %>
+    </div>
+</body>
+</html>
