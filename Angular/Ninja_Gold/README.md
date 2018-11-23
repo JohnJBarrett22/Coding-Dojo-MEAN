@@ -13,3 +13,7 @@ For this assignment, use your knowledge of event handlers, angular components, a
 
 * BONUS: Implement a save button so that the user may decide when the game is saved to the database.
 
+Inline-style: 
+![alt text](https://i58.photobucket.com/albums/g261/johnjbarrett22/ninjaGoldOneComponent_zpslqm5k99c.png "Ninja Gold Wireframe")
+
+
