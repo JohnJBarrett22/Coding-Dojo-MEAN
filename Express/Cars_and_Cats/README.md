@@ -1,4 +1,4 @@
-# Express Cars and Cats
+# Cars and Cats
 
 You now have the tools necessary to repeat the Cars and Cats assignment from Node, but with Express!
 
