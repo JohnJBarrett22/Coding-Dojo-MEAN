@@ -1,4 +1,4 @@
-#EJS Cat Data
+# EJS Cat Data
 
 In this assignment, we are going to focus on displaying data about our particular cats.
 
