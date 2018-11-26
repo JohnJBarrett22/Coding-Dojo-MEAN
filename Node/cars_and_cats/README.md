@@ -14,6 +14,4 @@ Your server must be capable of handling the following URL requests:
 
 The point of this exercise is to build your node server so it serves all of the content of your website. 
 
-Helpful hints
-Serving CSS stylesheets
 Here is an example of how to handle a browser request for a stylesheet:
