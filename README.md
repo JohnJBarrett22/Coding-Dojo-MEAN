@@ -1,15 +1,14 @@
-# Coding-Dojo-Java
-## Course work from Coding Dojo's Java stack that includes Java Fundamentals, Java OOP, Java on the Web and Java Spring.
+# Coding-Dojo-MEAN
+## Course work from Coding Dojo's MEAN stack that includes Pre-MEAN, JavaScript, Node, Express, MongoDB, Angular, Deployment, Full MEAN and Algorithms.
 
 ### Technologies:
-* Java
-* Spring Tool Suite
-* MySQL
-* Spring Boot
-* Spring Data-JPA
-* Spring Security
-* Spring MVC
-* JSP
+* MongoDB
+* Angular
+* Node.js
+* Advanced JavaScript
+* Node Package Manager
+* Socket.IO
+* Bower
 
 ### Skills:
 * OOP & MVC
